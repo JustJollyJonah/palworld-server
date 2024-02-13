@@ -1,0 +1,11 @@
+services:
+  server:
+    build: bullseye/
+    ports: 
+      - "8211:8211"
+      - "25575:25575"
+    env_file:
+      - path: ./default.env
+        required: true
+    volumes:
+      - "~/PalworldServer:/home/steam/palworld-dedicated/Pal/Saved"
