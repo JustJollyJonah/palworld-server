@@ -5,7 +5,6 @@ services:
       - "8211:8211"
       - "25575:25575"
     env_file:
-      - path: "./default.env"
-        required: true
+      - ./default.env
     volumes:
       - "~/PalworldServer:/home/steam/palworld-dedicated/Pal/Saved"
