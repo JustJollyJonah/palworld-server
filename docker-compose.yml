@@ -7,4 +7,4 @@ services:
     env_file:
       - ./default.env
     volumes:
-      - "$HOST_MOUNT:/home/steam/palworld-dedicated/Pal/Saved"
+      - "${HOST_MOUNT}:/home/steam/palworld-dedicated/Pal/Saved"
