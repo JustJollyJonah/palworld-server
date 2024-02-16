@@ -7,4 +7,7 @@ services:
     env_file:
       - ./default.env
     volumes:
-      - ${HOST_MOUNT}:/home/steam/palworld-dedicated/Pal/Saved
+      - data-volume:/home/steam/palworld-dedicated/Pal/Saved
+
+volumes:
+  data-volume:
